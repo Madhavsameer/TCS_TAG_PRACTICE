@@ -2,6 +2,7 @@ import java.util.*;
 public class CrypticNumber {
 
     public static void main(String[] args) {
+        
         System.out.println(cryptic(10, 70));
     }
 
@@ -11,7 +12,7 @@ public class CrypticNumber {
         for(int i=start; i<=end; i++){
             if(i%7==0 && i%5!=0 && pall(i) ){
 
-                
+
                 mylist.add(i);
             }
 
@@ -37,6 +38,8 @@ public class CrypticNumber {
             }
             i/=10;
             rev=rev*10+unit;
+
+
 
             
         }
